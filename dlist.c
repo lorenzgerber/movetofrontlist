@@ -106,7 +106,10 @@ Returvärde: värdet som fanns på positionen p
 Kommentarer:
 */
 data dlist_inspect(dlist *l, dlist_position p) {
-    return p->next->data;
+    dlist_position temp=p->next;
+    p->next=p->next->next;
+    l->head->next=temp;
+    return l->head->next->data;
 }
 
 /*
