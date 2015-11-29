@@ -21,7 +21,6 @@
           <root url="file:///Library/Frameworks/Tcl.framework/PrivateHeaders" />
           <root url="file:///Library/Frameworks/Tk.framework/Headers" />
           <root url="file:///Library/Frameworks/Tk.framework/PrivateHeaders" />
-          <root url="file:///Library/Frameworks/WacomMultiTouch.framework/Headers" />
           <root url="file:///System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/Headers" />
           <root url="file:///System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/Headers" />
           <root url="file:///System/Library/Frameworks/Accelerate.framework/Headers" />
@@ -205,7 +204,6 @@
           <root url="file:///Library/Frameworks/Tcl.framework/PrivateHeaders" />
           <root url="file:///Library/Frameworks/Tk.framework/Headers" />
           <root url="file:///Library/Frameworks/Tk.framework/PrivateHeaders" />
-          <root url="file:///Library/Frameworks/WacomMultiTouch.framework/Headers" />
           <root url="file:///System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/Headers" />
           <root url="file:///System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/Headers" />
           <root url="file:///System/Library/Frameworks/Accelerate.framework/Headers" />

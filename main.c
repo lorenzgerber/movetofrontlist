@@ -9,19 +9,20 @@ int main(void){
     char* data1 = "furz";
     char* data2 = "shit";
     char* data3 = "gagu";
-    char *data[3] = {data1, data2, data3};
+    char* data4 = "drack";
+    char *data[4] = {data1, data2, data3, data4};
 
     dlist_position p = dlist_first(dl);
-    for (iii = 0; iii < 3;iii++){
+    for (iii = 0; iii < 4;iii++){
         dlist_insert(dl, p, data[iii]);
         p = dlist_next(dl, p);
     }
 
-    p = dlist_first(dl);
+    p = dlist_first(dl)->next;
 
-    for (iii = 0; iii < 3; iii++){
+    for (iii = 0; iii < 20; iii++){
         printf("%s\n", (char*) dlist_inspect(dl, p));
-        p = dlist_next(dl, p);
+        p = dlist_first(dl);
     }
 
     return 0;
