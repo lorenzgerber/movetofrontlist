@@ -18,11 +18,12 @@ int main(void){
         p = dlist_next(dl, p);
     }
 
-    p = dlist_first(dl)->next;
+    p = dlist_first(dl);
 
-    for (iii = 0; iii < 20; iii++){
+    while (!dlist_isEnd(dl, p)){
         printf("%s\n", (char*) dlist_inspect(dl, p));
-        p = dlist_first(dl);
+        if(p==dlist_first(dl))
+            p = dlist_next(dl,p);
     }
 
     return 0;

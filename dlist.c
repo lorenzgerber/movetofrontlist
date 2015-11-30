@@ -106,13 +106,16 @@ Returvärde: värdet som fanns på positionen p
 Kommentarer:
 */
 data dlist_inspect(dlist *l, dlist_position p) {
-    if(p == dlist_first(l) )
+    if(p == dlist_first(l) ) {
+        //p = dlist_next(l, p);
         return l->head->next->data;
-    dlist_position temp=p->next;
-    dlist_position temp2=p->next->next;
-    p->next->next=l->head->next; // set next pointer of the inspected element on the current first
-    p->next=temp2; // closing the gap that opens by removing the current
-    l->head->next=temp; // set head to the inspected, new first, element.
+    }
+    dlist_position temp1=p->next->next;
+    dlist_position temp2=l->head->next;
+
+    l->head->next=p->next;
+    p->next->next=temp2;
+    p->next=temp1;
     return l->head->next->data;
 }
 
